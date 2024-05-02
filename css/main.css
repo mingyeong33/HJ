@@ -1,0 +1,544 @@
+@import url("reset.css");
+@font-face {
+	font-family: 'SUITEm';
+	src: url('../font/SUITE-Medium.woff2');
+}
+@font-face {
+	font-family: 'SUITEb';
+	src: url('../font/SUITE-Bold.woff2');
+}
+@font-face {
+	font-family: 'SUITEh';
+	src: url('../font/SUITE-Heavy.woff2');
+}
+@font-face {
+    font-family: 'SBb';
+	src: url('../font/SB_Window_Font/SB\ 어그로\ B.ttf');
+}
+@font-face {
+    font-family: 'SBm';
+	src: url('../font/SB_Window_Font/SB\ 어그로\ M.ttf');
+}
+@font-face {
+    font-family: 'SBbM';
+	src: url('../font/SB_Mac_Font/SB\ 어그로OTF\ B.otf');
+}
+@font-face {
+    font-family: 'SBmM';
+	src: url('../font/SB_Mac_Font/SB\ 어그로OTF\ M.otf');
+}
+
+body{
+    font-family: 'SUITEm';
+}
+
+.t_hidden {
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main .bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header h1 {
+    width: 5vw;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    color: #909090;
+    margin-left: 3vw;
+    font-size: 16px;
+}
+header ul li:hover{
+    color: #fff;
+}
+
+.ham {
+    display: none;
+    max-width: 10vw;
+    cursor: pointer;
+}
+
+main>h2 {
+    position: absolute;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+    font-size: 4vw;
+    font-family:'SBm', 'SBmM';
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.4);
+}
+
+main>h2 .s1 {
+    color: #005CAC;
+    font-family:'SBb', 'SBbM';
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.4);
+}
+main>h2 .s2 {
+    color: #018C9E;
+    font-family:'SBb', 'SBbM';
+    text-shadow: 0 4px 4px rgb(0, 0, 0, 0.4);
+}
+
+/* //main */
+
+/* m-menu */
+.m-menu {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 4;
+    color: #fff;
+    background-color: #005CAC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-menu .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.m-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.m-menu ul li {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 1px solid #9B9B9B;
+}
+.m-menu ul li:hover{
+    background-color: #018C9E;
+}
+
+/* //m-menu */
+
+/* business */
+.bu{
+    margin-top: 200px;
+}
+.bu h2{
+    font-family: 'SBb', 'SBbM';
+    font-size: 32px;
+    margin-bottom: 100px;
+}
+.bu h2>span{
+    font-family: 'SBb', 'SBbM';
+    color: #005CAC;
+}
+.bu .b2, .bu .b4{
+    flex-direction: row-reverse;
+}
+.bu .bb{
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+.bu .b2 .text, .bu .b4 .text{
+    text-align: end;
+}
+.bu .bb .text h3{
+    font-family: 'SBm';
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.bu .bb .text h3 span{
+    font-family: 'SBm', 'SBmM';
+    color: #005CAC;
+}
+.bu .bb .text p{
+    font-size: 16px;
+    font-weight: 500;
+}
+/* //business */
+
+/* portfolio */
+.po{
+    margin-top: 200px;
+}
+.po h2{
+    font-family: 'SBb', 'SBbM';
+    margin-bottom: 100px;
+    font-size: 32px;
+}
+.po h2>span{
+    font-family: 'SBb', 'SBbM';
+    color: #005CAC;
+}
+
+.po  .poster{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.po .poster h3{
+    margin-top: 20px;
+    font-family: 'SUITEb';
+    font-size: 20px;
+}
+.po .poster h4{
+    margin-top: 8px;
+    font-size: 12px;
+    color: #333;
+}
+.po .poster p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #B7B7B7;
+}
+.po button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: initial;
+    border: 2px solid #005CAC;
+    color: #005CAC;
+    border-radius: 10px;
+    width: 120px;
+    height: 41px;
+    font-family: 'SUITEb';
+    font-size: 20px;
+}
+/* //portfolio */
+
+/* artist */
+.ar{
+    margin-top: 200px;
+}
+.ar h2{
+    font-family: 'SBb', 'SBbM';
+    margin-bottom: 100px;
+    font-size: 32px;
+}
+.ar h2>span{
+    font-family: 'SBb', 'SBbM';
+    color: #005CAC;
+}
+.ar .card{
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+.ar .card figure{
+    position: relative;
+}
+/* ///////// */
+/* ///////// */
+
+.flip{
+    perspective: 1100px;
+  }
+.card {
+  position: relative;
+  transition: .8s;
+  transform-style: preserve-3d;
+}	
+
+
+.ar .card figure, .ar .card .text {
+  width: 100%; 
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.ar .card .text{
+    text-align: center;
+    position: absolute;
+    background: #005CAC; 
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ar .card .text h4{
+    font-family: 'SUITEb';
+    font-size: 24px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.ar .card .text p{
+    font-size: 16px;
+    color: #ccc;
+}
+/* //artist */
+
+/* contact */
+.co{
+    margin-top: 150px;
+    margin-bottom: 200px;
+    flex-direction: row;
+    position: relative;
+}
+.co h2{
+    font-family: 'SBb', 'SBbM';
+    margin-bottom: 100px;
+    font-size: 32px;
+}
+.co h2>span{
+    font-family: 'SBb', 'SBbM';
+    color: #005CAC;
+}
+.co ul{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.co ul li{
+    margin-right: 10px;
+}
+.co .text:not(:last-child){
+    margin-bottom: 35px;
+}
+.co .text h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'SUITEh';
+}
+.co .text p{
+    font-size: 20px;
+    line-height: 150%;
+}
+.co .map iframe{
+    width: 100%;
+    height: 500px;
+}
+/* //contact */
+
+/* footer */
+footer{
+    background-color: #2d2d2d;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin: 15px 0;
+    color: #808080;
+    font-size: 12px;
+}
+
+footer ul{
+    display: flex;
+}
+footer ul li{
+    margin-right: 10px;
+    color: #808080;
+    font-size: 12px;
+    text-decoration: underline;
+}
+footer ul li:not(:last-child)::after{
+    content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: #808080;
+            margin-left: 10px;
+}
+/* //footer */
+
+
+@media screen and (max-width:1200px) {
+    .bu .bb .text h3{
+        font-size: 1.3em;
+        font-family: 'SBb', 'SBbM';
+    }
+    .bu .bb .text h3 span{
+        font-family: 'SBb', 'SBbM';
+    }
+    .bu .bb .text p{
+        font-size: .9em;
+    }
+    .po .poster h3{
+        font-size: 1.1em;
+    }
+    .ar .card .text h4{
+        font-size: 20px;
+        margin-top: 1em;
+        margin-bottom: 10px;
+    }
+    .ar .card .text p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1024px){
+    header ul {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+}
+@media screen and (max-width:991px) {
+    .bu .bb .text h3{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .bu .bb .text p{
+        font-size: .65em;
+        font-family: 'SUITEb';
+    }
+    .po .poster h3{
+        font-size: .8em;
+    }
+    .po .poster h4{
+        font-size: .6em;
+    }
+    .po .poster p{
+        font-size: .5em;
+    }
+    .ar .card .text h4{
+        font-size: 16px;
+        margin-top: 1em;
+        margin-bottom: .5em;
+    }
+    .ar .card .text p{
+        font-size: 8px;
+    }
+    header {
+        height: 15vh;
+        padding: 0 50px;
+    }
+    header h1 {
+        width: 10vw;
+    }
+}
+@media screen and (max-width:767px) {
+    .bu .bb .text h3{
+        margin-top: 24px;
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-family: 'SBm', 'SBmM';
+    }
+    .bu .bb .text h3 span{
+        font-family: 'SBm', 'SBmM';
+    }
+    .bu .bb .text p{
+        font-size: 16px;
+        font-family: 'SUITEm';
+    }
+    
+    .bu .bb .text{
+        text-align: start;
+    }
+
+    .ar .card{
+        margin-bottom: 50px;
+    }
+    .ar .card .text h4{
+        margin-top: 30px;
+    }
+    .co .box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .co .box .tbox{
+        display: flex;
+        justify-content: center;
+    }
+    .co .box .tbox .text{
+        width: 30%;
+        text-align: center;
+        margin-top: 34px;
+    }
+    .co .box ul{
+        right: 0;
+    }
+    .co .map{
+        height: 330px;
+    }
+    .co .map iframe{
+        height: 100%;
+    }
+    footer p:nth-child(2){
+        line-height: 200%;
+    }
+}
+@media screen and (max-width:575px) {
+    footer ul li, footer p{
+        font-size: 8px;
+    }
+    .co .text h4{
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-family: 'SUITEh';
+    }
+    .co .text p{
+        font-size: 16px;
+    }
+    .co ul li{
+        height: 1.5em;
+    }
+    footer p:nth-child(2){
+        line-height: 0;
+    }
+}
+@media screen and (max-width:400px) {
+    .co .text h4{
+        font-size: 1em;
+        margin-bottom: 15px;
+        font-family: 'SUITEh';
+    }
+    .co .text p{
+        font-size: .5em;
+    }
+    .co ul li{
+        height: 1em;
+    }
+}
